@@ -114,11 +114,22 @@
     }
 
     .hero-image {
-      background: url('https://alysbeach.com/wp-content/uploads/2025/09/EE-17-Rendering_2024-11-14-scaled.jpg') center/cover;
+      background: var(--line-gray);
       height: 280px;
       border-radius: 12px;
       margin: 30px 0;
       box-shadow: 0 4px 12px rgba(0, 73, 120, 0.15);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .hero-description {
@@ -317,7 +328,9 @@
   <main>
     <section class="hero">
       <h1>Where Craft Becomes Home</h1>
-      <div class="hero-image" role="img" aria-label="Crafted Home at Alys Beach rendering"></div>
+      <div class="hero-image">
+        <img src="https://alysbeach.com/wp-content/uploads/2025/09/EE-17-Rendering_2024-11-14-scaled.jpg" alt="Crafted Home at Alys Beach rendering">
+      </div>
       <p class="hero-description">
         During <strong>Alys Beach Crafted</strong>, we celebrate makers who shape beauty by hand—from the barrel to the beam.
         Discover <em>Crafted Homes at Alys Beach</em>, where timeless architecture and artisan detail meet the ease of the <strong>Somerset Home Program</strong>.
@@ -326,8 +339,8 @@
 
     <section>
       <div class="form-section">
-        <h2>Request an Invitation</h2>
-        <p>Join us during Crafted 2025 to explore the Somerset Home Program.</p>
+        <h2>Interested in learning more?</h2>
+        <p>Explore the Somerset Home Program at Crafted 2025.</p>
         <form id="crafted-form" action="#" method="post">
           <div class="form-row">
             <div class="form-group">
@@ -350,7 +363,7 @@
             </div>
           </div>
           <div class="form-footer">
-            <button type="submit" class="btn-primary">Request an Invitation</button>
+            <button type="submit" class="btn-primary">I'm interested.</button>
             <p class="fine-print">By submitting, you agree to be contacted per our Privacy Policy.</p>
           </div>
         </form>
@@ -359,7 +372,7 @@
   </main>
 
   <footer>
-    <p>© Alys Beach | Mockup concept for Crafted 2025</p>
+    <p>© Alys Beach | Mockup concept only - Crafted 2025</p>
   </footer>
 
   <script>
