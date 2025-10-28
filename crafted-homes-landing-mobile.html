@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Crafted Homes at Alys Beach | Somerset Home Program</title>
+  <meta name="description" content="Explore pre‑designed, construction‑ready custom homes through the Somerset Home Program by Alys Beach Construction.">
+  <meta property="og:title" content="Crafted Homes at Alys Beach">
+  <meta property="og:description" content="Explore pre‑designed, construction‑ready custom homes through the Somerset Home Program by Alys Beach Construction.">
+  <style>
+    :root {
+      --primary-blue: #004978;
+      --dark-blue: #00548E;
+      --navy-hover: #003a60;
+      --charcoal: #4D4D4D;
+      --soft-gray: #696960;
+      --white: #ffffff;
+      --cream: #fefefe;
+      --line-gray: #e8e8e8;
+      --accent-green: #61a229;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 430px;
+      font-family: 'Futura', 'Trebuchet MS', 'Arial', sans-serif;
+      color: var(--charcoal);
+      background: var(--cream);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Typography hierarchy - Alys Beach inspired */
+    h1, h2, h3 {
+      font-family: 'Didot', 'Bodoni MT', 'Garamond', 'Times New Roman', serif;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: var(--primary-blue);
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0 0 16px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 0 0 12px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--soft-gray);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Header - minimal and clean */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line-gray);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .header-inner {
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .brand svg {
+      height: 36px;
+      width: auto;
+    }
+
+    /* Hero section - mobile optimized */
+    .hero {
+      padding: 48px 20px 40px;
+      background: linear-gradient(to bottom, var(--white) 0%, var(--cream) 100%);
+      text-align: left;
+    }
+
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 11px;
+      color: var(--soft-gray);
+      margin: 0 0 16px;
+      font-weight: 500;
+    }
+
+    .hero h1 {
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--charcoal);
+      margin: 0;
+      max-width: 600px;
+    }
+
+    /* Card sections */
+    section {
+      padding: 32px 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(50, 50, 93, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--line-gray);
+    }
+
+    .card h2 {
+      margin-bottom: 14px;
+    }
+
+    .card-description {
+      color: var(--soft-gray);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin: 0;
+      padding: 0 0 0 20px;
+      color: var(--charcoal);
+    }
+
+    ul li, ol li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    ul li:last-child, ol li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Home rendering image */
+    .home-rendering {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border: 1px solid var(--line-gray);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Form section */
+    .form-section {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px 24px;
+      box-shadow: 0 4px 12px rgba(50, 50, 93, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--line-gray);
+    }
+
+    .form-section h2 {
+      margin-bottom: 12px;
+    }
+
+    .form-section > p {
+      margin-bottom: 24px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 12px;
+      color: var(--soft-gray);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      border: 1px solid var(--line-gray);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-family: inherit;
+      color: var(--charcoal);
+      background: var(--white);
+      transition: all 0.2s ease;
+      -webkit-appearance: none;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 3px rgba(0, 73, 120, 0.1);
+    }
+
+    input::placeholder {
+      color: #b8b8b8;
+    }
+
+    /* Button - Alys Beach style */
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary-blue);
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      font-size: 15px;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 73, 120, 0.2);
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .btn-primary:active {
+      background: var(--navy-hover);
+      transform: translateY(1px);
+      box-shadow: 0 2px 6px rgba(0, 73, 120, 0.3);
+    }
+
+    .form-footer {
+      margin-top: 8px;
+    }
+
+    .fine-print {
+      font-size: 12px;
+      color: var(--soft-gray);
+      line-height: 1.5;
+      margin-top: 12px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--line-gray);
+      padding: 32px 20px 48px;
+      text-align: center;
+      background: var(--white);
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--soft-gray);
+      margin: 0;
+    }
+
+    /* Spacing utilities */
+    .section-spacer {
+      padding: 24px 20px;
+    }
+
+    /* iOS safe area handling */
+    @supports (padding: max(0px)) {
+      body {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+      }
+
+      header {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+      }
+    }
+
+    /* Responsive adjustments for larger phones */
+    @media (min-width: 390px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .card {
+        padding: 32px 28px;
+      }
+    }
+
+    /* Prevent zoom on input focus (iOS) */
+    @media screen and (max-width: 767px) {
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="#" class="brand">
+        <svg width="49px" height="43px" viewBox="0 0 49 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Desktop-HD-Copy-2" transform="translate(-684.000000, -30.000000)" fill="#00548E">
+              <g id="Group-2">
+                <g id="Alys-Full-Logo" transform="translate(683.000000, 30.000000)">
+                  <g id="Buttery" transform="translate(0.956522, 0.452899)">
+                    <path d="M37.0822737,1.25213129 L38.1654764,1.25213129 C38.0451205,1.62777067 37.8044088,2.00341006 37.4433412,2.12862319 C37.0822737,2.25383632 36.6008502,2.25383632 36.3601385,2.00341006 C36.1194268,1.7529838 35.8787151,1.37734442 35.8787151,1.12691816 C35.8787151,0.751278772 36.1194268,0.375639386 36.4804944,0.125213129 C36.6008502,0.125213129 36.7212061,9.99200722e-15 36.9619178,9.99200722e-15 L36.9619178,1.25213129 L37.0822737,1.25213129 Z" id="Path"></path>
+                    <path d="M37.0822737,8.38927962 C38.4061881,7.88842711 39.6097467,7.26236147 40.9336612,6.76150895 L40.9336612,8.13885337 L37.0822737,9.89183717 L37.0822737,11.2691816 L42.3779315,9.01534527 L42.3779315,10.3926897 L37.0822737,12.646526 L37.0822737,14.0238704 L43.5814901,11.1439685 L43.5814901,12.3960997 L37.0822737,15.2760017 L37.0822737,16.528133 L44.9054045,13.1473785 C45.0257604,13.5230179 44.9054045,14.0238704 44.9054045,14.3995098 L37.0822737,17.9054774 L37.0822737,19.2828218 L37.0822737,19.2828218 L46.229319,15.2760017 L46.229319,15.2760017 L46.229319,16.6533461 L36.9619178,20.7853794 L36.9619178,22.1627238 L47.4328776,17.529838 L47.4328776,18.7819693 L36.9619178,23.4148551 L36.9619178,24.7921995 L48.8771479,19.5332481 L48.8771479,20.7853794 L36.9619178,26.0443308 L36.9619178,41.9463981 L35.5176475,41.5707587 L17.103201,36.5622336 L13.8535928,35.6857417 L0.855160052,27.9225277 L0.855160052,27.7973146 L23.8431292,29.0494459 L23.8431292,19.7836743 L25.2873995,19.1576087 L25.2873995,17.6550512 L26.6113139,17.0289855 L26.6113139,15.6516411 L28.0555842,15.0255754 L28.0555842,13.5230179 L29.4998545,12.8969523 L29.4998545,11.644821 L30.823769,11.1439685 L30.823769,9.76662404 L32.3883952,9.01534527 L32.3883952,7.76321398 L33.8326655,7.13714834 L33.8326655,5.50937766 C34.3140889,5.25895141 34.7955123,5.00852515 35.3972916,4.75809889 L35.3972916,3.38075448 C35.9990709,3.13032822 36.6008502,2.87990196 37.2026295,2.6294757 L37.2026295,5.63459079 L39.6097467,4.63288576 C39.7301026,5.00852515 39.6097467,5.50937766 39.6097467,6.01023018 L37.2026295,7.01193521 L37.2026295,8.38927962 L37.0822737,8.38927962 Z" id="Path"></path>
+                    <path d="M45.5071838,38.0647911 C44.4239811,37.8143649 43.2204225,37.5639386 42.1372198,37.3135124 C42.1372198,38.0647911 42.1372198,38.8160699 42.1372198,39.5673487 L41.2947287,39.9429881 L41.2947287,39.8177749 L41.2947287,28.7990196 C42.7389991,28.172954 44.1832694,27.5468883 45.6275397,26.9208227 L45.5071838,38.0647911 Z" id="Path"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="hero-kicker">Real Estate & Construction</p>
+    <h1>Crafted Homes at Alys Beach</h1>
+    <p class="hero-description">Discover the Somerset Home Program—pre‑designed, construction‑ready custom homes brought to life by Alys Beach Construction with a streamlined path from selection to keys‑in‑hand.</p>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2 id="somerset">Why Somerset</h2>
+      <p class="card-description">A simpler, faster way to build at Alys—without compromising design, craftsmanship, or legacy.</p>
+      <ul>
+        <li>Construction‑ready plans from architects trusted by Alys Beach.</li>
+        <li>Personalize interiors at the Resource Center with curated fixtures & finishes.</li>
+        <li>Seamless coordination across Sales, Construction & Design.</li>
+        <li>Weekly photo updates and milestone communications during the build.</li>
+        <li>On‑site warranty team and dedicated homeowner support.</li>
+      </ul>
+      <div class="media-placeholder">Somerset photography / rendering</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>About Alys Beach Construction</h2>
+      <ul>
+        <li>Exclusively building within Alys Beach; >75% of homes overseen by our team.</li>
+        <li>All homes meet FORTIFIED™ standards and are third‑party certified green.</li>
+        <li>Transparent process from pre‑construction through close and warranty.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Select your Somerset plan & homesite with an Alys Beach Sales Associate.</li>
+        <li>Make finish selections with our Owner Liaison at the Resource Center.</li>
+        <li>Pre‑construction meeting with your Builder Representative.</li>
+        <li>Receive weekly photo updates and schedule key walk‑throughs.</li>
+        <li>Orientation, closing & keys—then enjoy your new home.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="form" class="section-spacer">
+    <div class="form-section">
+      <h2>Talk with a Real Estate & Construction Professional</h2>
+      <p>Share a few details and our team will connect to schedule a conversation during or after Crafted.</p>
+      <form action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first">First Name</label>
+            <input id="first" type="text" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="last">Last Name</label>
+            <input id="last" type="text" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="(###) ###‑####">
+          </div>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn-primary">Submit</button>
+          <p class="fine-print">By submitting, you agree to be contacted per our Privacy Policy.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Alys Beach. Mockup concept for review.</p>
+  </footer>
+</body>
+</html>
