@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/crafted-homes-landing-initial.html" },
+    { "source": "/index.html", "destination": "/crafted-homes-landing-initial.html" }
+  ]
+}
